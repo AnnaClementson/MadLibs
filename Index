@@ -1,0 +1,62 @@
+using System;
+
+namespace MadLibs
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      /*
+      Program - Madlibs
+      Author - Anna Clementson
+      */
+      // Program starting
+      Console.WriteLine("Welcome");
+
+      // Title:
+      string title = "Interactive Mad Libs Game";
+      Console.WriteLine(title);
+      
+      // Defining variables:
+      Console.WriteLine("Enter a name: ");
+      string name = Console.ReadLine();
+      Console.WriteLine("Enter an adjective: ");
+      string adjectiveOne = Console.ReadLine();
+      Console.WriteLine("Enter a second adjective: ");
+      string adjectiveTwo = Console.ReadLine();
+      Console.WriteLine("Enter a third adjective: ");
+      string adjectiveThree = Console.ReadLine();
+      Console.WriteLine("Enter a verb e.g an action : ");
+      string verb = Console.ReadLine();
+      Console.WriteLine("Enter a noun e.g person, place or thing : ");
+      string nounOne = Console.ReadLine();
+      Console.WriteLine("Enter a second noun: ");
+      string nounTwo = Console.ReadLine();
+      Console.WriteLine("Enter an animal: ");
+      string animal = Console.ReadLine();
+      Console.WriteLine("Enter a food: ");
+      string food = Console.ReadLine();
+      Console.WriteLine("Enter a fruit: ");
+      string fruit = Console.ReadLine();
+      Console.WriteLine("Enter a superhero: ");
+      string superhero = Console.ReadLine();
+      Console.WriteLine("Enter a country: ");
+      string country = Console.ReadLine();
+      Console.WriteLine("Enter a dessert: ");
+      string dessert = Console.ReadLine();
+      Console.WriteLine("Enter a year: ");
+      string year = Console.ReadLine();
+      
+      // The template for the story:
+
+      string story = $"This morning {name} woke up feeling {adjectiveOne}. 'It is going to be a {adjectiveTwo} day!'
+      Outside, a bunch of {animal}s were protesting to keep {food} in stores. 
+      They began to {verb} to the rhythm of the {nounOne}, which made all the {fruit}s very {adjectiveThree}.
+      Concerned, {name} texted {superhero}, who flew {name} to {country} and dropped {name} in a puddle of frozen {dessert}. 
+      {name} woke up in the year {year}, in a world where {nounTwo}s ruled the world.";
+
+      // Print the story:
+      Console.WriteLine(story);
+    }
+  }
+}
